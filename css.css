@@ -1,0 +1,488 @@
+/* Variáveis */
+:root {
+    --cor-texto: #fff;
+    --cor-primaria: #81FF03;
+    --cor-secundaria: #458900;
+    --cor-fundo: #000;
+    --cor-fundo-secundaria: rgba(190, 190, 192, 0.1);
+    --cor-botao: rgba(99, 158, 87, 0.7);
+    --cor-input: #776F6F;
+    --cor-botao-hover: #3a55b0;
+    --fonte-padrao: Arial, sans-serif;
+}
+
+/* Estilos gerais */
+body {
+    overflow-x: hidden;
+    margin: 0;
+    font-family: var(--fonte-padrao);
+}
+
+/* Layout */
+.pai, #banner, .foto, .painel button {
+    width: 100%;
+}
+
+/* Imagens */
+#img { width: 60px; }
+#lop { width: 15px; }
+#tx { margin-top: 20px; }
+
+/* Botão */
+#but {
+    max-height: 40px;
+    border-radius: 25px;
+    background-color: var(--cor-botao);
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+/* Banner */
+.ban { background-color: var(--cor-fundo-secundaria); }
+#banner { max-width: 375px; }
+
+/* Pagamento */
+.pague {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.pague img {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px 49px;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.item {
+    border-radius: 100px;
+}
+
+.item > img {
+    width: 100%;
+    height: auto;
+}
+
+/* Apoiadores */
+.apoiadores { color: #8d8181; }
+
+/* Títulos */
+h2 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid var(--cor-primaria);
+    line-height: 0.1em;
+    margin: 50px 0;
+}
+
+h2 span {
+    background: var(--cor-texto);
+    padding: 0 10px;
+    color: var(--cor-secundaria);
+}
+
+/* Criador */
+.criador {
+    margin: 0;
+    align-self: flex-end;
+}
+
+/* Grid areas */
+.cont {
+    background: url("img/banner2.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 20px;
+    height: fit-content;
+}
+
+#anum1, #anum2, #anum3, #anum4, #anum5 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.card-body {
+    padding: 1rem;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* Bit */
+#bit {
+    margin: 0;
+    padding: 0;
+}
+
+/* Footer */
+footer { background-color: var(--cor-fundo); }
+
+p {
+    font-size: 12px;
+    color: #585858;
+    margin: 5px;
+}
+
+/* Imagens */
+#imgm, #imgo {
+    margin: 20px;
+    border-radius: 8px;
+}
+
+#imgm {
+    height: 130px;
+    width: 300px;
+}
+
+#imgo {
+    height: 115px;
+    width: 150px;
+}
+
+.imtx {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "img tx";
+    margin: 60px 15px 0;
+    background-color: rgba(58, 58, 59, 0.2);
+    border-radius: 10px;
+    width: fit-content;
+}
+
+/* Modal */
+.modal-content { background-color: var(--cor-fundo); }
+.modal-header, .modal-footer { background-color: var(--cor-fundo); }
+.modal-header { color: #8d8181; }
+.modal-header .close { color: var(--cor-texto); }
+.modal-body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+.modal-body img {
+    width: 230px;
+    height: auto;
+}
+
+/* Cuz */
+.cuz {
+    background-color: green;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.cuz img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Tela */
+#tela { background-image: url(img/banner2.webp); }
+
+/* Painel */
+.painel {
+    background-color: var(--cor-fundo);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 50px;
+    align-items: center;
+}
+
+#com {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#buto {
+    border-radius: 20px;
+    margin-bottom: 4px;
+}
+
+.painel input { margin-bottom: 15px; }
+
+.pal { background: url("img/bg.webp") 100%; }
+
+/* Grid responsivo */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.item {
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.legenda {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Formulário */
+::placeholder { color: var(--cor-texto); }
+
+input, #foe {
+    width: 100%;
+    max-width: 240px;
+    margin: 15px auto;
+    background-color: var(--cor-input);
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#foe {
+    color: var(--cor-texto);
+    background-color: #4E6BD2;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#foe:hover { background-color: var(--cor-botao-hover); }
+
+.pesquisa {
+    border: 1px solid var(--cor-primaria);
+    padding: 15px 180px 15px 15px;
+    border-radius: 50px;
+    background: url("img/search.webp") no-repeat 310px/12%;
+    margin-right: 20px;
+}
+
+#banner {
+    background-image: url("img/banner2.webp");
+    background-size: cover; /* Faz com que a imagem cubra o contêiner */
+    background-repeat: no-repeat;
+    background-position: center; /* Centraliza a imagem de fundo */
+    width: 100%; /* Faz com que o banner ocupe 100% da largura do contêiner pai */
+    height: auto; /* Ajusta a altura automaticamente */
+    max-width: 1200px; /* Define uma largura máxima para telas maiores */
+    margin: 0 auto; /* Centraliza o banner horizontalmente */
+}
+.btn-primary {
+    background-color: var(--cor-primaria); /* Usa a cor primária definida nas variáveis */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove bordas do botão */
+    padding: 10px 20px; /* Espaço interno do botão */
+    border-radius: 5px; /* Bordas arredondadas do botão */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo ao passar o mouse */
+}
+.grid-item {
+    border: 1px solid #ddd; /* Borda opcional */
+    border-radius: 8px; /* Bordas arredondadas */
+    overflow: hidden; /* Garante que nada saia dos limites do item */
+    text-align: center; /* Centraliza o texto dentro do item */
+    background-color: #fff; /* Cor de fundo opcional */
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajusta o número de colunas baseado no tamanho do contêiner */
+    gap: 20px; /* Espaço entre os itens da grade */
+    padding: 20px; /* Espaço interno ao redor da grade */
+    justify-items: center; /* Centraliza os itens dentro de cada célula da grade */
+}
+
+.btn-primary:hover {
+    background-color: var(--cor-botao-hover); /* Cor do botão ao passar o mouse */
+}
+.grid-item img {
+    width: 100%; /* Faz com que a imagem ocupe toda a largura do item */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.legenda {
+    font-size: 14px; /* Tamanho da fonte para a legenda */
+    color: #333; /* Cor do texto da legenda */
+    padding: 10px; /* Espaço ao redor da legenda */
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+    #foe {
+        width: 90%;
+        font-size: 14px;
+    }
+    .grid-container {
+        grid-template-columns: 1fr; /* Apenas uma coluna em telas pequenas */
+    }
+    #banner {
+        height: 200px; /* Ajuste a altura para telas pequenas, se necessário */
+        background-size: contain; /* Ajusta a imagem para caber no contêiner sem cortar */
+        background-position: center top; /* Ajusta a posição para garantir que o topo da imagem seja visível */
+    }
+    .pague {
+        justify-content: space-around;
+    }
+    .pague img {
+        width: 120px;
+    }
+    .cuz {
+        grid-template-columns: 1fr;
+    }
+}
+.cuz {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.cuz img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+@media (max-width: 375px) {
+    .imtx { flex-direction: column; }
+    #imgo, #tx, .card, .grid-item, #banner, .pague img {
+        width: 100%;
+        height: auto;
+    }
+    #tx {
+        margin-top: 20px;
+        padding: 10px;
+    }
+    .cont { padding: 10px; }
+    .grid-container { grid-template-columns: 1fr; }
+    .pague {
+        justify-content: center;
+    }
+    .pague img {
+        width: 100%;
+        max-width: 150px;
+    }
+    .cuz {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 600px) {
+    .painel { max-width: 500px; }
+    input, #foe {
+        width: 80%;
+        max-width: 400px;
+    }
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 2-3 colunas em telas médias */
+    }
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .pague {
+        justify-content: space-around;
+    }
+    .cuz {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    #banner {
+        height: 300px; /* Ajuste a altura para telas médias, se necessário */
+    }
+}
+
+@media (min-width: 900px) {
+    .painel {
+        padding: 35px;
+        width: 800px;
+        max-width: 100%;
+    }
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr); /* 4 colunas em telas grandes */
+    }
+    #imgo {
+        margin-top: 10%;
+        width: 400px;
+        height: auto;
+        font-weight: bold;
+    }
+    #banner {
+        height: 400px; /* Ajuste a altura para telas grandes, se necessário */
+    }
+    #ma {
+        display: inline-block;
+        width: auto;
+        margin-top: 100px;
+        color: var(--cor-texto);
+        font-size: 25px;
+    }
+    #tx {
+        margin-top: 100px;
+        font-size: large;
+    }
+    .cont { grid-template-columns: 1fr 1fr 1fr 1fr 1fr ; }
+    input, #foe {
+        width: 60%;
+        max-width: 500px;
+    }
+    .grid-container { grid-template-columns: 1fr 1fr 1fr 1fr ; }
+    .ban {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #banner { max-width: 1200px; }
+    .planos-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 
+    }
+    .plano {
+        width: calc(20% - 20px);
+        margin-bottom: 20px;
+    }
+    .plano h3 { font-size: 18px; }
+    .plano .p2 { font-size: 14px; }
+    .plano .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    .pague {
+        justify-content: space-between;
+    }
+    .pague img {
+        width: 180px;
+    }
+    .cu{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #imtx
+    .cuz {
+        grid-template-columns:  1fr;
+
+    }
+}
